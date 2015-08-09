@@ -28,6 +28,7 @@ function DoctorLogicReviews($atts, $instance) {
 		$json_filter = json_decode($json);
         ob_start();
         ?>
+       
 <div class="dl__grid" id="dl__main-grid">
 
     <div class="dl__col dl__col--1-of-4  dl__filter">
@@ -121,7 +122,7 @@ function DoctorLogicReviews($atts, $instance) {
 						?>
 						<img class="dl__modal" name="<?=$media->MediaId?>" href="#<?=$media->MediaId?>" src="<?=$media->Url?>?mobilewidth=96&w=150" />
 						<div style="display:none" id="<?=$media->MediaId?>">
-						<img src="<?=$media->Url?>" />
+						<img src="<?=$media->Url?>?w=600" />
 						</div>
 						<?php
 						}

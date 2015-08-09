@@ -2,18 +2,18 @@
 Contributors: DoctorLogic 
 Tags: doctors, medical, websites, reviews, galleries
 Requires at least: 3.8
-Tested up to: 4.2.2
+Tested up to: 4.2.4
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin creates the ability to publish Reviews & Before/After Galleries powered by the DoctorLogic.com API to 
-WordPress websites .
+This plugin creates the ability to publish Review & Before/After Galleries to 
+WordPress websites powered by the DoctorLogic.com API.
 
 == Description ==
 
 DoctorLogic is a Medical Internet Software Development Company with many 
-different Software as a Service (SASS) products to help medical professionals 
+different Software as a Service (SaaS) products to help medical professionals 
 market themselves on the internet.   
  
 For more information, visit https://DoctorLogic.com.
@@ -27,14 +27,22 @@ a license to use them.
  
 All DoctorLogic components are powered by the DoctorLogic API and back-end tools.
 
+
+
 == Installation ==
 
 This section describes how to install the plugin and get it working.
 
-1. Upload `doctorlogic-components` folder & its contents to `/wp-content/plugins/` 
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Click the Settings link from the Plugins page on the DoctorLogic Component plugin.
-4. Complete configuration steps using the on-screen instructions.
+In WordPress Admin:
+1. Click Plugins
+2. Click Add New
+3. Search for "DoctorLogic Components"
+4. Click Install Now
+
+After Installing:
+1. Activate the plugin through the 'Plugins' menu in WordPress
+2. Click the Settings link from the Plugins page on the DoctorLogic Component plugin.
+3. Complete configuration steps using the on-screen instructions.
 
 == Frequently Asked Questions ==
 
@@ -50,6 +58,13 @@ The most likely cause is that your customer has not published in reviews or Gall
 yet. Contact DoctorLogic from the email address or phone number on the DoctorLogic 
 settings screen in WordPress if you need help.
 
+Some hosting environments block the ability to call web-services.  Make sure php.ini
+has these settings:
+
+allow_url_fopen = on
+allow_url_include = On
+
+
 == Screenshots ==
 
 1. The DoctorLogic configuration screen in WordPress Admin.
@@ -62,7 +77,10 @@ settings screen in WordPress if you need help.
 * Improved markup & CSS to work in more different WordPress Themes
 = 1.2 = 
 * Added modal popups to Review list.  Improved style sheet handling.
-
+= 2.0 = 
+* Added Gallery component 
+= 2.1 = 
+* Code tweaks for WordPress 4.3 changes
 
 == Upgrade Notice ==
 = 1.0 = 
@@ -71,4 +89,7 @@ settings screen in WordPress if you need help.
 * Improved markup & CSS to work in more different WordPress Themes
 = 1.2 = 
 * Added modal popups to Review list.  Improved style sheet handling.
-
+= 2.0 = 
+* Added Gallery component 
+= 2.1 = 
+* Code tweaks for WordPress 4.3 changes

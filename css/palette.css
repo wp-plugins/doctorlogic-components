@@ -48,6 +48,9 @@ Palette
  .dl__grid  .dl__review_summary a{
  }
 
+.dl__grid .dl__slideshow{
+    border:solid 1px #cccccc;
+}
 
 .dl__grid .dl__star{
     color:#ffcc00;
@@ -71,9 +74,9 @@ Palette
 
 
 
-.dl__gallery_result_row{
+.dl__gallery-result-row{
 background-color: rgba(200,200,200,.3);
 
 }
-.dl__gallery_result_row a, .dl__gallery_result_row a:visited{
+.dl__gallery-result-row a, .dl__gallery-result-row a:visited{
 }
