@@ -3,7 +3,7 @@
 Plugin Name: DoctorLogic
 Plugin URI: http://doctorlogic.com/wordpress-plugins
 Description: Easily add DoctorLogic Reviews or Galleries to your website.
-Version: 2.0
+Version: 2.1
 Author: DoctorLogic
 Author URI: https://doctorlogic.com
 License: GPLv2
