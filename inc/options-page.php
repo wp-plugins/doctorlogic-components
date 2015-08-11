@@ -185,7 +185,16 @@ function dl_settings_page(){
 						<input type="text" name="dl_review_path" value="<?php echo esc_attr(get_option('dl_review_path')); ?>" />
 					</td>
 					<td>
-						If your Customer is using the DoctorLogic Review Component, you will need to create a full-width page to hold output of Reviews.  Type the page-slug for that page here.  If the page doesn't exist yet you <a href="post-new.php?post_type=page">can create it here</a>.
+						<p>If your Customer is using the DoctorLogic Review Component, you will need to create a full-width page to hold output of Reviews.  
+							Type the page-slug for that page here.  If the page doesn't exist yet you <a href="post-new.php?post_type=page">can create it here</a>.</p>
+													<?php
+						if(get_option('dl_review_path')!=""){?>
+						<p>
+							<a href="/<?=get_option('dl_review_path')?>" target="_blank">Visit Page</a>
+						</p>
+						<?php
+						}?>	
+
 					</td>
 				</tr>
 				<tr>
@@ -196,7 +205,15 @@ function dl_settings_page(){
 						<input type="text" name="dl_gallery_path" value="<?php echo esc_attr(get_option('dl_gallery_path')); ?>" />
 					</td>
 					<td>
-						If your Customer is using the DoctorLogic Gallery Component, you will need to create a full-width page to hold output of Before/After Galleries or Patient Stories.  Type the page-slug for that page here. If the page doesn't exist yet you <a href="post-new.php?post_type=page">can create it here</a>.
+						<p>If your Customer is using the DoctorLogic Gallery Component, you will need to create a full-width page to hold output of Before/After Galleries or Patient Stories.  
+							Type the page-slug for that page here. If the page doesn't exist yet you <a href="post-new.php?post_type=page">can create it here</a>.</p>
+						<?php
+						if(get_option('dl_gallery_path')!=""){?>
+						<p>
+							<a href="/<?=get_option('dl_gallery_path')?>" target="_blank">Visit Page</a>
+						</p>
+						<?php
+						}?>	
 					</td>
 				</tr>
 				<tr>

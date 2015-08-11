@@ -81,6 +81,9 @@ allow_url_include = On
 * Added Gallery component 
 = 2.1 = 
 * Code tweaks for WordPress 4.3 changes
+= 2.1.1 =
+* Improved diagnostics, convenient link to pages containing main plugins
+
 
 == Upgrade Notice ==
 = 1.0 = 
@@ -93,3 +96,5 @@ allow_url_include = On
 * Added Gallery component 
 = 2.1 = 
 * Code tweaks for WordPress 4.3 changes
+= 2.1.1 =
+* Improved diagnostics, convenient link to pages containing main plugins
