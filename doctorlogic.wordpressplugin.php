@@ -3,7 +3,7 @@
 Plugin Name: DoctorLogic
 Plugin URI: http://doctorlogic.com/wordpress-plugins
 Description: Easily add DoctorLogic Reviews or Galleries to your website.
-Version: 2.1
+Version: 2.0
 Author: DoctorLogic
 Author URI: https://doctorlogic.com
 License: GPLv2
@@ -41,14 +41,24 @@ include_once (plugin_dir_path(__FILE__) . 'inc/gallery-functions.php');
 
 /*Enqueue scripts and styles*/
 
-function dl_styles() {
-	wp_enqueue_style( 'dl-layout', plugins_url() . "/doctorlogic.wordpressplugin/css/layout.css");
-    wp_enqueue_style( 'dl-palette', plugins_url() . "/doctorlogic.wordpressplugin/css/palette.css");
+function dl_scripts() {
+    /*Styles*/
+    wp_register_style( 'dl-layout',  plugin_dir_url( __FILE__ ) . '/css/layout.css' );
+    wp_register_style( 'dl-palette',  plugin_dir_url( __FILE__ ) . '/css/palette.css' );
+
+    wp_enqueue_style( 'dl-layout' );
+    wp_enqueue_style( 'dl-palette' );
     wp_enqueue_style ('dashicons');
+
+
+    /*Scripts*/
+    wp_register_style( 'dl-script',  plugin_dir_url( __FILE__ ) . '/scripts/scripts.js' );
 	wp_enqueue_script( 'jquery');
-	wp_enqueue_script( 'dl-script', plugins_url() . "/doctorlogic.wordpressplugin/scripts/scripts.js");
+    wp_enqueue_script( 'dl-script' );
 }
-add_action( 'wp_enqueue_scripts', 'dl_styles' );
+
+add_action( 'wp_enqueue_scripts', 'dl_scripts' );
+
 
 
 
