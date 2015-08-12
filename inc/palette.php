@@ -6,6 +6,9 @@ function dl__palette(){
         $s.= "/*These styles are configured through the DoctorLogic WordPress plugin under the 'Advanced Styles'  menu*/\r\n";
 
 
+if(isset($dl_foo->a)){
+
+
 	foreach($dl_css as $key => $value)
 	{
 
@@ -13,10 +16,12 @@ function dl__palette(){
 	}
 
         $s.= "/*End of DoctroLogic 'Advanced Styles'*/\r\n";
-	$s.= "</style>";
+		$s.= "</style>";
 
-return $s;
+	return $s;
+	}
 }
+
 dl__palette();
 
 ?>

@@ -85,6 +85,9 @@ allow_url_include = On
 * Improved diagnostics, convenient link to pages containing main plugins
 = 2.1.2 =
 * White spaces causing problems in some third-party environments.
+= 2.1.3 = 
+* Fixes a problem for customers who have never used advanced styles
+
 == Upgrade Notice ==
 = 1.0 = 
 * Initial Release
@@ -100,3 +103,5 @@ allow_url_include = On
 * Improved diagnostics, convenient link to pages containing main plugins
 = 2.1.2 =
 * White spaces causing problems in some third-party environments.
+= 2.1.3 = 
+* Fixes a problem for customers who have never used advanced styles
