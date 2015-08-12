@@ -83,8 +83,8 @@ allow_url_include = On
 * Code tweaks for WordPress 4.3 changes
 = 2.1.1 =
 * Improved diagnostics, convenient link to pages containing main plugins
-
-
+= 2.1.2 =
+* White spaces causing problems in some third-party environments.
 == Upgrade Notice ==
 = 1.0 = 
 * Initial Release
@@ -98,3 +98,5 @@ allow_url_include = On
 * Code tweaks for WordPress 4.3 changes
 = 2.1.1 =
 * Improved diagnostics, convenient link to pages containing main plugins
+= 2.1.2 =
+* White spaces causing problems in some third-party environments.

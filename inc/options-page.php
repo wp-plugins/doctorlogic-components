@@ -491,7 +491,7 @@ function dl__TestReviewList(){
 	<tr>
 		<td><?=dl__pass($pass)?></td>
 		<td>Review API Request</td>
-		<td><a href="<?=$apiurl?>" target="_blank">Gallery List API</a></td>
+		<td><a href="<?=$apiurl?>" target="_blank">Review List API</a></td>
 		<td>
 			<?=$error_mesage?>
 		</td>
@@ -534,4 +534,3 @@ function dl__environment(){
 	return $apiurl;
 }
 ?>
-
